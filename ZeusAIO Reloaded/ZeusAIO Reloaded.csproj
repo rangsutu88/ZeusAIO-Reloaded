@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68408205-D08E-4C6B-8CF0-C9B32B0FC69C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ZeusAIO</RootNamespace>
+    <AssemblyName>ZeusAIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ZeusBROS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Colorful.Console">
+      <HintPath>..\..\..\..\Desktop\Bazookaaio src\BazookaAIO - v2.0 - Full src Code\bin\Debug\net461\Colorful.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.Commands, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Commands.2.2.0\lib\net461\Discord.Net.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.Core, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Core.2.2.0\lib\net461\Discord.Net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.Rest, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Rest.2.2.0\lib\net461\Discord.Net.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.Webhook, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Webhook.2.2.0\lib\netstandard2.0\Discord.Net.Webhook.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net.WebSocket, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.WebSocket.2.2.0\lib\net461\Discord.Net.WebSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Leaf.xNet">
+      <HintPath>..\..\..\..\Desktop\Bazookaaio src\BazookaAIO - v2.0 - Full src Code\bin\Debug\net461\Leaf.xNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Interactive.Async, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.4.0.0\lib\net461\System.Interactive.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Async, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Async.4.0.0\lib\net461\System.Linq.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xNet-Ameliorated">
+      <HintPath>..\..\..\..\Desktop\DashedAIO\DashedAIO\bin\Debug\xNet-Ameliorated.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AntiCaptchas\AntiCaptcha.cs" />
+    <Compile Include="AntiCaptchas\TwoCaptcha.cs" />
+    <Compile Include="Auth\API.cs" />
+    <Compile Include="Auth\Login.cs" />
+    <Compile Include="Combo Editer\Othertools.cs" />
+    <Compile Include="Discord Features\DiscordBot.cs" />
+    <Compile Include="IO\Changelog.cs" />
+    <Compile Include="IO\Export.cs" />
+    <Compile Include="IO\Functions.cs" />
+    <Compile Include="IO\Import.cs" />
+    <Compile Include="IO\SpecialText.cs" />
+    <Compile Include="IO\Variables.cs" />
+    <Compile Include="Module Builder\compiler.cs" />
+    <Compile Include="Menus\mainmenu.cs" />
+    <Compile Include="Module Builder\Runner.cs" />
+    <Compile Include="Modules\Adfly.cs" />
+    <Compile Include="Modules\Aha.cs" />
+    <Compile Include="Modules\Albertsons.cs" />
+    <Compile Include="Modules\Aliexpress.cs" />
+    <Compile Include="Modules\Antipublic.cs" />
+    <Compile Include="Modules\Apowersoft.cs" />
+    <Compile Include="Modules\Apple.cs" />
+    <Compile Include="Modules\Avira.cs" />
+    <Compile Include="Modules\Azure.cs" />
+    <Compile Include="Modules\Bagelboy.cs" />
+    <Compile Include="Modules\Beeg.com.cs" />
+    <Compile Include="Modules\Bitdefender.cs" />
+    <Compile Include="Modules\Bitesquad.cs" />
+    <Compile Include="Modules\Bitlaunch.cs" />
+    <Compile Include="Modules\Blim.cs" />
+    <Compile Include="Modules\BuffaloWildWings.cs" />
+    <Compile Include="Modules\Cbs.cs" />
+    <Compile Include="Modules\Clarovideo.cs" />
+    <Compile Include="Modules\Coinbase.cs" />
+    <Compile Include="Modules\Coinsph.cs" />
+    <Compile Include="Modules\ColdStone.cs" />
+    <Compile Include="Modules\CookieDictionary.cs" />
+    <Compile Include="Modules\CrunchyRoll.cs" />
+    <Compile Include="Modules\DCUniverse.cs" />
+    <Compile Include="Modules\DisneyPlus.cs" />
+    <Compile Include="Modules\DominosUS.cs" />
+    <Compile Include="Modules\Doordash.cs" />
+    <Compile Include="Modules\Duolingo.cs" />
+    <Compile Include="Modules\Easyjet.cs" />
+    <Compile Include="Modules\EbayValidMail.cs" />
+    <Compile Include="Modules\Elasticemail.cs" />
+    <Compile Include="Modules\Etsy.cs" />
+    <Compile Include="Modules\Facebook.cs" />
+    <Compile Include="Modules\filmin.cs" />
+    <Compile Include="Modules\Fitbit.cs" />
+    <Compile Include="Modules\FlightClub.cs" />
+    <Compile Include="Modules\Foap.cs" />
+    <Compile Include="Modules\Forever21.cs" />
+    <Compile Include="Modules\Fox.cs" />
+    <Compile Include="Modules\Funimation.cs" />
+    <Compile Include="Modules\Fwrd.cs" />
+    <Compile Include="Modules\Gamefly.cs" />
+    <Compile Include="Modules\GetUpside.cs" />
+    <Compile Include="Modules\Gfuel.cs" />
+    <Compile Include="Modules\Godaddy.cs" />
+    <Compile Include="Modules\GooseVpn.cs" />
+    <Compile Include="Modules\Gucci.cs" />
+    <Compile Include="Modules\headspace.cs" />
+    <Compile Include="Modules\HeadspaceUK.cs" />
+    <Compile Include="Modules\HideMyAss.cs" />
+    <Compile Include="Modules\HolaVpn.cs" />
+    <Compile Include="Modules\Hotspotshield.cs" />
+    <Compile Include="Modules\Hulu.cs" />
+    <Compile Include="Modules\IbVpn.cs" />
+    <Compile Include="Modules\Imvu.cs" />
+    <Compile Include="Modules\Instagram.cs" />
+    <Compile Include="Modules\IpVanish.cs" />
+    <Compile Include="Modules\kaspersky.cs" />
+    <Compile Include="Modules\Kfc.cs" />
+    <Compile Include="Modules\Later.com.cs" />
+    <Compile Include="Modules\Luminati.cs" />
+    <Compile Include="Modules\Mailaccess.cs" />
+    <Compile Include="Modules\McAfee.cs" />
+    <Compile Include="Modules\Md5dehasher.cs" />
+    <Compile Include="Modules\Medu mail access.cs" />
+    <Compile Include="Modules\Minecraft.cs" />
+    <Compile Include="Modules\Mingle.com.cs" />
+    <Compile Include="Modules\MyCanal.cs" />
+    <Compile Include="Modules\Napster.cs" />
+    <Compile Include="Modules\Nba.cs" />
+    <Compile Include="Modules\Netflix.cs" />
+    <Compile Include="Modules\NordVpn.cs" />
+    <Compile Include="Modules\Onlyfans.cs" />
+    <Compile Include="Modules\Origin.cs" />
+    <Compile Include="Modules\Outback SteakHouse.cs" />
+    <Compile Include="Modules\Patreon.Com.cs" />
+    <Compile Include="Modules\Phub.cs" />
+    <Compile Include="Modules\Pinterest.cs" />
+    <Compile Include="Modules\PizzaHutUKVM.cs" />
+    <Compile Include="Modules\Plextv.cs" />
+    <Compile Include="Modules\Postmatesfleet.cs" />
+    <Compile Include="Modules\Psn Valid Mail.cs" />
+    <Compile Include="Modules\Robinhood.cs" />
+    <Compile Include="Modules\Scribd.cs" />
+    <Compile Include="Modules\Epixnow.cs" />
+    <Compile Include="Modules\Shawacademy.cs" />
+    <Compile Include="Modules\Shemaroo.me.cs" />
+    <Compile Include="Modules\Shopify.cs" />
+    <Compile Include="Modules\Showtime.cs" />
+    <Compile Include="Modules\Shuttershock.cs" />
+    <Compile Include="Modules\SliceLife.cs" />
+    <Compile Include="Modules\SlingTV.cs" />
+    <Compile Include="Modules\Smartproxy.cs" />
+    <Compile Include="Modules\Smoothieking.cs" />
+    <Compile Include="Modules\Sonyvegas.cs" />
+    <Compile Include="Modules\Spotify.cs" />
+    <Compile Include="Modules\Surfshark.cs" />
+    <Compile Include="Modules\Symbolab.cs" />
+    <Compile Include="Modules\Zenmate.cs" />
+    <Compile Include="Modules\TigerVpn.cs" />
+    <Compile Include="Modules\TubiTV.cs" />
+    <Compile Include="Modules\TunnelBear.cs" />
+    <Compile Include="Modules\Twitch.cs" />
+    <Compile Include="Modules\Twitchlegacy.cs" />
+    <Compile Include="Modules\Udacity.cs" />
+    <Compile Include="Modules\Ufctv.cs" />
+    <Compile Include="Modules\Ullu.cs" />
+    <Compile Include="Modules\Upcloud.cs" />
+    <Compile Include="Modules\Uplay.cs" />
+    <Compile Include="Modules\Venmo.cs" />
+    <Compile Include="Modules\Viaplay.cs" />
+    <Compile Include="Modules\Voot.cs" />
+    <Compile Include="Modules\Vortex.gg.cs" />
+    <Compile Include="Modules\VyperVpn.cs" />
+    <Compile Include="Modules\Waves.com.cs" />
+    <Compile Include="Modules\Wish.cs" />
+    <Compile Include="Modules\Wordpress.cs" />
+    <Compile Include="Modules\Wwe.cs" />
+    <Compile Include="Modules\Xcams.cs" />
+    <Compile Include="Modules\XVPN.cs" />
+    <Compile Include="Modules\Yahoo.cs" />
+    <Compile Include="Modules\Pandora.cs" />
+    <Compile Include="Modules\Zee5.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\Config.cs" />
+    <Compile Include="Settings\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Other Tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ZeusBROS.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

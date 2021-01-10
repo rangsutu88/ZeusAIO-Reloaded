@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeusAIO Reloaded", "ZeusAIO Reloaded\ZeusAIO Reloaded.csproj", "{68408205-D08E-4C6B-8CF0-C9B32B0FC69C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68408205-D08E-4C6B-8CF0-C9B32B0FC69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68408205-D08E-4C6B-8CF0-C9B32B0FC69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68408205-D08E-4C6B-8CF0-C9B32B0FC69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68408205-D08E-4C6B-8CF0-C9B32B0FC69C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50A81F29-41A0-48C1-9BD1-C3691C3CF50E}
+	EndGlobalSection
+EndGlobal
